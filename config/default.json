@@ -1,0 +1,21 @@
+{
+    "app": {
+        "port": 3000
+    },
+    "github": {
+        "clientId": 123,
+        "secret": "Not a secret"
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "user",
+        "password": "pass",
+        "database": "db",
+        "port": 1234
+    },
+    "mongo": {
+        "host": "localhost",
+        "port": 2701,
+        "db": "db"
+    }
+}
