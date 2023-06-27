@@ -8,10 +8,10 @@
     },
     "mysql": {
         "host": "localhost",
-        "user": "user",
-        "password": "pass",
-        "database": "db",
-        "port": 1234
+        "user": "username",
+        "password": "password",
+        "database": "mydb",
+        "port": 3306
     },
     "mongo": {
         "host": "localhost",
