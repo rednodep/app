@@ -15,8 +15,10 @@ app.get('/', (req, res) => {
     res.send("Main page")
 });
 
+app.use(express.urlencoded( { extended: false } ))
+
 app.use('/', guestsRouter);
-app.use('/', usersRouter);
+app.use('/users', usersRouter);
 app.use('/github', githubRouter);
 
 app.use(errorHandler);

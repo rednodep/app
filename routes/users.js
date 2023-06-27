@@ -1,15 +1,15 @@
 const express = require('express');
 const router = express.Router();
 
+const { addSymbol } = require('../controllers/users/controller');
+const { addSymbolValidator } = require('../controllers/users/validators');
+const joi = require('../middlewares/joi');
+
 const dashboard = (req, res) => {
     res.send("dashboard");
 }
 
 const logout = (req, res) => {
-    res.send("dashboard");
-}
-
-const addSymbol = (req, res) => {
     res.send("dashboard");
 }
 
@@ -19,6 +19,6 @@ router.get('/welcome', (req, res) => {
 
 router.get('/dashboard', dashboard);
 router.get('/logout', logout);
-router.post('/symbol', addSymbol);
+router.post('/symbol', joi(addSymbolValidator), addSymbol);
 
 module.exports = router;
